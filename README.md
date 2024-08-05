@@ -29,6 +29,7 @@ In the case that the column with a lot of missing values in it but is not being 
 
 3. Afterwards, run the file [eda and feature engineering](https://github.com/nadiamahzan/python-technical-assessment/blob/main/03_eda_%26_feature_engineering.ipynb). Columns with datetime datatype are converted to days and years and afterwards are put into categories to be processed. Label encoding and ordinal encoding are then used to encode categorical data tp change it into numerical data to be processed. Afterwards, we do a correlation coefficient to see the correlation between the columns. 
 
+![Correlation Matrix](https://github.com/nadiamahzan/python-technical-assessment/blob/main/correlation_matrix.png)
 
 ## Training Model
 
