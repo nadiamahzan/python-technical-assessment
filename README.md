@@ -29,13 +29,30 @@ In the case that the column with a lot of missing values in it but is not being 
 
 3. Afterwards, run the file [eda and feature engineering](https://github.com/nadiamahzan/python-technical-assessment/blob/main/03_eda_%26_feature_engineering.ipynb). Columns with datetime datatype are converted to days and years and afterwards are put into categories to be processed. Label encoding and ordinal encoding are then used to encode categorical data tp change it into numerical data to be processed. Afterwards, we do a correlation coefficient to see the correlation between the columns. 
 
-![Correlation Matrix](https://github.com/nadiamahzan/python-technical-assessment/blob/main/correlation_matrix.png)
+![Correlation Matrix](https://github.com/nadiamahzan/python-technical-assessment/blob/main/eda_results/correlation_matrix.png)
 
 From the figure above, we can see that there are not many columns that has a strong correlation with our target variable 'repay_fail'. 
 
 Afterwards, we use techniques such as Cramer's V, Univariate Selection and Feature Importance to pick only the top 10 of the columns to be used for data modelling. 
 
+Cramer's V result:
+
+![Cramer's V ](https://github.com/nadiamahzan/python-technical-assessment/blob/main/eda_results/cramer's_v.PNG)
+
+Univariate Selection result:
+
+![Univariate Selection](https://github.com/nadiamahzan/python-technical-assessment/blob/main/eda_results/univariate_selection.PNG)
+
+Feature Importance result:
+
+![Feature Importance](https://github.com/nadiamahzan/python-technical-assessment/blob/main/eda_results/feature_importance.png)
+
+The results for the top 10 features are similar to each other. Cramer's V is a test to see the correlation between two categorical features hence we cannot use the results. We would use the features in Univariate Selection as it has higher and consistent scores throughout the columns compared to Feature Importance.
+
 ## Training Model
 
-1. Please run the [data modelling](https://github.com/nadiamahzan/python-technical-assessment/blob/main/04_classification.ipynb) to train the model to predict which machine learning model performs the best on the dataset. 
+Please run the [data modelling](https://github.com/nadiamahzan/python-technical-assessment/blob/main/04_classification.ipynb) to train the model to predict which machine learning model performs the best on the dataset. 
+
+In here, we use multiple classification model to train our data on. The models used are **Logistic Regression**, **Artificial Neural Network**, **Support Vector Machine**, **Naive Bayes**, **K-Nearest Neighbours**, **Decision Tree** and **Random Forest**. The key metrics used to test these machine learning models are accuracy, precision, recall and F1 score. We also run a confusion matrix to see how many of the tests data are true position and true negative.
+
 
