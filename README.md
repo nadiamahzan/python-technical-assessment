@@ -31,6 +31,10 @@ In the case that the column with a lot of missing values in it but is not being 
 
 ![Correlation Matrix](https://github.com/nadiamahzan/python-technical-assessment/blob/main/correlation_matrix.png)
 
+From the figure above, we can see that there are not many columns that has a strong correlation with our target variable 'repay_fail'. 
+
+Afterwards, we use techniques such as Cramer's V, Univariate Selection and Feature Importance to pick only the top 10 of the columns to be used for data modelling. 
+
 ## Training Model
 
 1. Please run the [data modelling](https://github.com/nadiamahzan/python-technical-assessment/blob/main/04_classification.ipynb) to train the model to predict which machine learning model performs the best on the dataset. 
