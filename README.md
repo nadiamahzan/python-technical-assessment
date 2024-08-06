@@ -53,6 +53,6 @@ The results for the top 10 features are similar to each other. Cramer's V is a t
 
 Please run the [data modelling](https://github.com/nadiamahzan/python-technical-assessment/blob/main/04_classification.ipynb) to train the model to predict which machine learning model performs the best on the dataset. 
 
-In here, we use multiple classification model to train our data on. The models used are **Logistic Regression**, **Artificial Neural Network**, **Support Vector Machine**, **Naive Bayes**, **K-Nearest Neighbours**, **Decision Tree** and **Random Forest**. The key metrics used to test these machine learning models are accuracy, precision, recall and F1 score. We also run a confusion matrix to see how many of the tests data are true position and true negative.
+In here, we use multiple classification model to train our data on. The models used are **Logistic Regression**, **Artificial Neural Network**, **Support Vector Machine**, **Naive Bayes**, **K-Nearest Neighbours**, **Decision Tree** and **Random Forest**. The key metrics used to test these machine learning models are accuracy, precision, recall and F1 score. We also run a confusion matrix to see how many of the tests data are true positive and true negative.
 
 
