@@ -53,6 +53,76 @@ The results for the top 10 features are similar to each other. Cramer's V is a t
 
 Please run the [data modelling](https://github.com/nadiamahzan/python-technical-assessment/blob/main/04_classification.ipynb) to train the model to predict which machine learning model performs the best on the dataset. 
 
-In here, we use multiple classification model to train our data on. The models used are **Logistic Regression**, **Artificial Neural Network**, **Support Vector Machine**, **Naive Bayes**, **K-Nearest Neighbours**, **Decision Tree** and **Random Forest**. The key metrics used to test these machine learning models are accuracy, precision, recall and F1 score. We also run a confusion matrix to see how many of the tests data are true positive and true negative.
+In here, we use multiple classification model to train our data on. The models used are **Logistic Regression**, **Artificial Neural Network**, **Support Vector Machine**, **Naive Bayes** and **K-Nearest Neighbours**. These 4 models  The key metrics used to test these machine learning models are accuracy, precision, recall and F1 score. We also run a confusion matrix to see how many of the tests data are true positive and true negative.
+
+### Logistic Regression Results:
+
+![lr_results](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/lr_results.PNG)
+
+Confusion Matrix:
+
+True Positives = 1259
+True Negatives = 8022
+False Positives = 12
+False Negatives = 47
+
+![lr_cm](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/lr_cm.png)
+
+### Artificial Neural Network:
+
+![ann_results](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/ann_results.PNG)
+
+Confusion Matrix:
+
+True Positives = 1129
+True Negatives = 8033
+False Positives = 1
+False Negatives = 177
+
+![ann_cm](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/ann_cm.png)
+
+### Support Vector Machine:
+
+![svm_results](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/svm_results.PNG)
+
+Confusion Matrix:
+
+True Positives = 1264
+True Negatives = 8026
+False Positives = 8
+False Negatives = 42
+
+![svm_cm](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/svm_cm.png)
+
+### Naive Bayes:
+
+![nb_results](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/nb_results.PNG)
+
+Confusion Matrix:
+
+True Positives = 1243
+True Negatives = 7995
+False Positives = 39
+False Negatives = 63
+
+![nb_cm](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/nb_cm.png)
+
+### K-Nearest Neighbours:
+
+![knn_results](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/knn_results.PNG)
+
+Confusion Matrix:
+
+True Positives = 903
+True Negatives = 8009
+False Positives = 25
+False Negatives = 403
+
+![knn_cm](https://github.com/nadiamahzan/python-technical-assessment/blob/main/classification_results/knn_cm.png)
 
 
+### Conclusion:
+
+From the results of the above models, SVM model performs the best with the highest score for accuracy, recall and its F1 score. In terms of precision, ANN model has a slightly higher results than SVM, but overall SVM still performs the best. 
+
+In the terms of finding the true positives and true negatives, SVM also scored the highest in these part. 
